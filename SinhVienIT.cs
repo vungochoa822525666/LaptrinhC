@@ -20,6 +20,17 @@ namespace TaolopThayThanh
             this.diemMMT = diemMMT;
             this.diemTinHVP = diemTinHVP;
         }
+        public double DiemTrungBinh()
+        {
+            return ((this.diemLTW * 3 + this.diemMMT * 4 + this.diemTinHVP) / 11);
+        }
+        public override string ToString()
+        {
+        return this.diemLTW + "\t" + this.diemMMT + "\t" + this.diemTinHVP;
+
+
+        }
+       
        
      }
     }
